@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" /-->
+</head>
+<style>
+    #e-mail , #password{
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    display: none;
+}
+</style>
+<body>
+    <form action="">
+        <div>
+            <label>E-mail:</label>
+            <input type="text" name="email" id="email" >
+        </div>
+        <div>
+            <label>Senha:</label>
+            <input type="password" name="senha" id="senha" >
+        </div>
+    </form>
+    <button onclick="valida()">Login</button>
+    <h4 id="e-mail">O campo email deve ser preenchido</h4>    
+    <h4 id="password">O campo senha deve ser preenchido</h4>    
+
+    <script type="text/javascript">
+        function valida() {
+    const email = document.getElementById('email');
+    const senha = document.getElementById('senha');
+
+    const avisoEmail = document.getElementById('e-mail');
+    const avisoSenha = document.getElementById('password');
+
+    if (email.textContent === "" && senha.textContent === "") {
+        email.style.border = "red";
+        avisoEmail.style.display = 'block';
+    
+        senha.style.border = "red";
+        avisoSenha.style.display = 'block';
+    }
+
+    else if (email.textContent === "") {
+        email.style.border = "red";
+        avisoEmail.style.display = 'block';
+        
+        const teste = document.createElement('p');
+        teste.textContent = 'Prossiga';
+        document.getElementById('email').appendChild(teste);
+
+    }
+
+    else if (senha.textContent === "") {
+        senha.style.border = "red";
+        avisoSenha.style.display = 'block';
+    }
+    
+    else {
+        
+    }
+}
+
+    </script>
+</body>
+</html>

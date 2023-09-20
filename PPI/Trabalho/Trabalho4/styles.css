@@ -1,0 +1,37 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+  }
+  
+  table {
+    padding: 15px;
+    width: 300ox;
+    margin: 0 auto;
+  }
+  
+  td {
+    border: 2px solid black;
+    text-align: center;
+    font-size: 12px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  footer {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+  }
+  .buttons {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .player-x {
+    background-color: blue;
+    text-align: center;
+  }
+  
+  .player-o {
+    background-color: green;
+    text-align: center;
+  }
