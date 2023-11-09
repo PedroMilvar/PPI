@@ -1,0 +1,11 @@
+.logo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+footer {
+    justify-content: last baseline;
+    display:flex;
+    padding-inline-end: 0%;
+}

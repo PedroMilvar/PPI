@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <div class="logo"> <a href="index.html"> <img src="Imagens/logo.png" alt="Logo" widht="200" height="200"></a></a>   </div>
+</head>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid"> 
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">Página Inicial</a>
+          <a class="nav-link" href="cadastrocarro.html">Cadastrar</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <body>
+    <form>
+        <fieldset>
+            <div>
+                <label for="modelo">Modelo do Carro:</label>
+                <input type="text" id="modelo" name="modelo" maxlength="30">
+            </div>
+            <label >Marca: </label>
+            <div>
+                <select name="Marca">
+                    <option value="Audi">Audi</option>
+                    <option value="BYD">BYD</option>
+                    <option value="CaoaCherry">Caoa Cherry</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Outra">Outra</option>
+                </select>
+            </div>
+            <div>
+                <label for="cor">Cor: </label>
+                <input type="text" id="cor" name="cor" maxlength="30">
+            </div>
+            <label >Combustível: </label>
+            <div>
+                <select name="combustivel">
+                    <option value="gasolina">Gasolina</option>
+                    <option value="etanol">Etanol</option>
+                    <option value="flex">Flex</option>
+                </select>
+            </div>
+            <label >Novo: </label>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Sim</label>
+              </div>
+              <label for="preco">Preço:</label>
+              <input type="number" id="preco" name="preco">
+              <p>Descrição</p>
+        <textarea name="Mensagem" rows="4" cols="40" >
+            </textarea>
+            
+        </fieldset>
+        <button type="button" class="btn btn-primary">Cadastrar</button>
+    </form>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script><script type="text/javascript" src="script.js"></script>
+</body>
+<footer>
+    <p>Avaliação prática 1 - PPI - Pedro Milvar Santos Vieira</p>
+</footer>
+</html>
